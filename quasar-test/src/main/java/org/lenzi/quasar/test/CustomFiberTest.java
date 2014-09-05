@@ -37,7 +37,7 @@ public class CustomFiberTest implements Serializable {
 	private transient FiberScheduler scheduler;
 	
 	public CustomFiberTest(){
-		this.scheduler = new FiberForkJoinScheduler("MyTestScheduler", 1, null, false);
+		this.scheduler = new FiberForkJoinScheduler("MyTestScheduler", 4, null, false);
 	}
 	
 	/*
