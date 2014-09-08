@@ -2,11 +2,19 @@
 
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 
-		<file>C:/temp/quasar-sample.log</file>
+		<!-- 
+		C:/temp/quasar-sample.log
+		Users/slenzi/Documents/programming/log/quasar-sample.log
+		-->
+		<file>/Users/slenzi/Documents/programming/log/quasar-sample.log</file>
 
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
-			<fileNamePattern>C:/temp/quasar-sample.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 
+			C:/temp/quasar-sample.%d{yyyy-MM-dd}.log
+			/Users/slenzi/Documents/programming/log/quasar-sample.%d{yyyy-MM-dd}.log
+			-->
+			<fileNamePattern>/Users/slenzi/Documents/programming/log/quasar-sample.%d{yyyy-MM-dd}.log</fileNamePattern>
 			<!-- keep 30 days' worth of history -->
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>

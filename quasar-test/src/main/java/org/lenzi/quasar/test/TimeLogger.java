@@ -47,7 +47,8 @@ public class TimeLogger implements SuspendableRunnable {
 	public void run() throws SuspendExecution {
 		try {
 			for(;;){
-				System.out.println(name + ": Time is " + dateFormat.format(Calendar.getInstance().getTime()));
+				//System.out.println(name + ": Time is " + dateFormat.format(Calendar.getInstance().getTime()));
+				logger.debug(name + ": Time is " + dateFormat.format(Calendar.getInstance().getTime()));
 				Fiber.sleep(sleep);			
 			}
 		} catch (InterruptedException e) {
